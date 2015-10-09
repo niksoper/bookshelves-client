@@ -2,11 +2,11 @@ var gulp = require('gulp'),
     args = require('yargs').argv,
     del = require('del'),
     $ = require('gulp-load-plugins')({lazy: true}),    
-    config = require('./gulp-config.js')();
+    config = require('./gulp-config.js');
 
 gulp.task('sass', ['clean'], function() {
     return gulp
-        .src(config.source.sassFiles)
+        .src(config.source.sassMain)
         .pipe($.print())
         .pipe($.sass(config.sass).on('error', $.sass.logError))
         .pipe($.autoprefixer(config.autoprefixer))

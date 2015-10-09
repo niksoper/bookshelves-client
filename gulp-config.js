@@ -1,9 +1,10 @@
-module.exports = function() {
+module.exports = (function() {
     
     var buildRoot = './build/';
     
     var config = {
         source: {
+            sassMain: './scss/app.scss',
             sassFiles: './scss/**/*.scss'
         },
         build: {
@@ -20,4 +21,4 @@ module.exports = function() {
     };
         
     return config;
-};
+})();
