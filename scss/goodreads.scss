@@ -16,18 +16,19 @@ $goodreads-border-color: #e3dfc9;
 }
 
 .goodreads-text-logo {
-    font-size: 1.2em;
     border: 1px solid $goodreads-border-color;
     background-color: $goodreads-bg-color;
     padding: 5px;
     border-radius: 2px;
     
     > span:nth-child(1) {
+        font-size: 1.2em;
         font-weight: 300;
         color: $goodreads-color;
     }
     
     > span:nth-child(2) {
+        font-size: 1.2em;
         color: black;
     }
 }
