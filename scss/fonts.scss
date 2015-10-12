@@ -14,7 +14,6 @@
 [class^="flaticon-"]:after, 
 [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
-//    font-size: 20px;
     font-style: normal;
     margin-left: 20px;
 }
@@ -25,4 +24,8 @@
 
 .icon-large {
     font-size: 10rem;
+}
+
+.icon {
+    color: $icon-color;
 }
